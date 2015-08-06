@@ -49,7 +49,6 @@ function showCard(plOverflow){
 	        var oneCard = allCards.eq(i);
 	        var oneSpan = dealerCards.eq(i);
 	        oneCard.removeClass("close").addClass("open");
-	        //console.log("test", oneSpan);
 	        setTimeout(function(){
 	        	oneSpan.css({"visibility":"visible"});
 	        },
@@ -63,8 +62,6 @@ function showCard(plOverflow){
 
 	// сет таймайт - один раз виконати.
 	if(!plOverflow)	setTimeout(dealerAI, 900);
-	//dealerAI();	
-
 }
 
 function dealerAI(){
@@ -96,17 +93,6 @@ function dealerAI(){
 		}
 	},
 	1500);
-
-	// while(dlScore<17){
-	// 	getCards(0,1);
-	// 	// false - у гравця не перебор, отже є сенс відкривати карти діллєра
-	// 	showCard(false);
-	// }
-		/* було всередині while if(dlScore>21) endMsg("Диллер совершил перебор."); */
-	//}
-	//if( (dlScore>=plScore) || (plScore>21) )endMsg("Fatality :(");
-	//else endMsg("Flawless victory!");
-	
 }
 
 function Shuffle(o) {

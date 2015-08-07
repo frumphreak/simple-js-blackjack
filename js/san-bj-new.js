@@ -60,13 +60,11 @@ function showCard(plOverflow){
 	var buttonsLine=$('.line');
 	buttonsLine.css({"visibility":"hidden"});
 
-	// сет таймайт - один раз виконати.
 	if(!plOverflow)	setTimeout(dealerAI, 900);
 }
 
 function dealerAI(){
-	// setTimeout
-	// clearTimeout
+
 	var flag=0;
 	var timerId1 = setInterval(function() {
 	        if (dlScore<17){
